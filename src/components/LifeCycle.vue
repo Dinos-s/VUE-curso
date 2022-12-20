@@ -1,10 +1,13 @@
 <template>
+    <h2>Aula - 07</h2>
     <h1>Animal: {{ animal }}</h1>
+    ---------------------------------------
+
 </template>
 
 <script>
     export default {
-        animal: 'Rino',
+        animal: 'Animal',
         data(){
             return{
                 animal: 'desconhecido'
