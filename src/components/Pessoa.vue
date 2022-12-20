@@ -1,5 +1,5 @@
 <template>
-    <h2>Aula - 09</h2>
+    <h2>Aula - 10</h2>
     <h2>Eu sou {{ nome }}</h2>
     <Info/>
 </template>

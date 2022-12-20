@@ -1,25 +1,20 @@
 <template>
-    <!-- <h2>Aula - 09</h2> -->
-    <p v-if="nao_trabalhando">No momento estou a procura de novas oprtunidades de emprego</p>
-    <p v-else>No momento estiu trabalhando com <strong>Vue.js</strong></p>
-    <p>Possuo conhecimeto em:</p>
-    <ul>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>MySQL</li>
-        <li>Vue.js</li>
-    </ul>
-    <p v-show="showEmail">email para contato: {{ email }}</p>
+    <!-- <h2>Aula - 10</h2> -->
+    <p>Usando o <strong>v-bind</strong> para alterar links de sites e src, isso é usado para deixar os componentes de forma dinamica, tambem pode ser usado com <strong>:+atributo htlm</strong></p>
+    <p>Acesse o meu github e veja o meu trabalho <a v-bind:href="github" target="_blank">Dinos-s</a></p>
+    <Picture/>
 </template>
 
 <script>
+    import Picture from "./Picture.vue";
     export default {
         name: 'Info',
+        components:{
+            Picture,
+        },
         data(){
             return {
-                nao_trabalhando: false,
-                email: 'info@.com',
-                showEmail: true,
+                github:'https://github.com/Dinos-s',
             }
         }
     }
