@@ -1,10 +1,10 @@
 <template>
-    <!-- <h2>Aula - 11</h2> -->
-    <p>Basicamente funções que podem ser executadas em eventos ou uma lógica. Podendo ser chamados pelo <strong>@click</strong> em um butão, que executará o método, determinado, os metodos são tratados como objeto.</p>
-    <p><strong>Use o 'this.', para manipular o seu metodo</strong></p>
+    <!-- <h2>Aula - 12</h2> -->
+    <p>No parte de estilização o <strong>CSS</strong> pode ser declarado de dois modos o global, que é apenas a tag css declarada no final do codigo vue.</p>
+    <p>Já no scopo é nescessário declarar a tag css com o atributo scode, assim o css será isolado somente aquele componente.</p>
     <p>Acesse o meu github e veja o meu trabalho <a v-bind:href="github" target="_blank">Dinos-s</a></p>
     <div>
-        <button @click="showEmail">{{ btnText }}</button>
+       <button @click="showEmail">{{ btnText }}</button>
     </div>
     <p v-show="showemail">Meu contato: {{ email }}</p>
 </template>
@@ -33,3 +33,11 @@
         }
     }
 </script>
+
+<!-- style global -->
+<style>
+    body{
+        background-color:  cadetblue;
+        color: whitesmoke;
+    }
+</style>
