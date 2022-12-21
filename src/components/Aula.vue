@@ -1,19 +1,19 @@
 <template>
-    <h2>Aula - 10</h2>
-    <h2>Eu sou {{ nome }}</h2>
+    <h2>Aula - 11</h2>
+    <h2>Aula de {{ aula }}</h2>
     <Info/>
 </template>
 
 <script>
     import Info from "./info.vue";
     export default{
-        name: 'Pessoa',
+        name: 'aula',
         components:{
             Info,
         },
         data(){
             return {
-                nome: 'GMR'
+                aula: 'Métodos'
             }
         }
     }

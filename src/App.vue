@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Pessoa from "./components/Pessoa.vue";
+import Pessoa from "./components/Aula.vue";
   export default {
     name: 'App',
     components:{
