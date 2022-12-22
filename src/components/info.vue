@@ -1,11 +1,23 @@
 <template>
-    <!-- <h2>Aula - 12</h2> -->
-    <p>No parte de estilização o <strong>CSS</strong> pode ser declarado de dois modos o global, que é apenas a tag css declarada no final do codigo vue.</p>
-    <p>Já no scopo é nescessário declarar a tag css com o atributo scode, assim o css será isolado somente aquele componente.</p>
+    <!-- <h2>Aula - 13</h2> -->
+    <p>Array pode ser renderizada de duas formas, de simples ou declanrando o que está na lista como objeto. sendo invocado pela diretiva <strong>v-for</strong>.</p>
     <p>Acesse o meu github e veja o meu trabalho <a v-bind:href="github" target="_blank">Dinos-s</a></p>
     <div>
        <button @click="showEmail">{{ btnText }}</button>
     </div>
+    <p>Possuo conhecimeto em:</p>
+    <p>Beckend:</p>
+    <ul>
+        <li v-for="(tecnology, index) in Tec_backend" :key="index">
+            {{ tecnology }}
+        </li>
+    </ul>
+    <p>Frontend:</p>
+    <ul>
+        <li v-for="tecnology in Tec_frotend" :key='tecnology.id'>
+            {{ tecnology.lenguage }}
+        </li>
+    </ul>
     <p v-show="showemail">Meu contato: {{ email }}</p>
 </template>
 
@@ -18,7 +30,13 @@
                 github:'https://github.com/Dinos-s',
                 email: 'info@.com',
                 showemail: false,
-                btnText: 'Mostrar e-mail'
+                btnText: 'Mostrar e-mail',
+                Tec_backend: ['JavaScript', "Python", `MySQL`],
+                Tec_frotend: [
+                    {id: 1, lenguage: 'HTML'},
+                    {id: 2, lenguage: 'CSS'},
+                    {id: 3, lenguage: 'JS'},
+                ],
             }
         },
         methods: {
