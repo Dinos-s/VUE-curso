@@ -1,8 +1,8 @@
 <template>
-    <h2>Aula - 14</h2>
+    <h2>Aula - 15</h2>
     <h2>Aula de {{ aula }}</h2>
     <Info/>
-    <Form/>
+    <EventsMult/>
 </template>
 
 <style>
@@ -13,16 +13,16 @@
 
 <script>
     import Info from "./Info.vue";
-    import Form from './Form.vue';
+    import EventsMult from './EventsMult.vue';
     export default{
         name: 'aula',
         components:{
             Info,
-            Form
+            EventsMult,
         },
         data(){
             return {
-                aula: 'Eventos'
+                aula: 'Eventos Multiplos'
             }
         }
     }

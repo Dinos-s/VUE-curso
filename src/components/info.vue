@@ -1,23 +1,7 @@
 <template>
-    <!-- <h2>Aula - 14</h2> -->
-    <p>São usados para complementar ações dos usários com a ativação dos métodos como vimos no <strong>@click()</strong> podendo receber parametros, para executar o determinado evento.</p>
+    <!-- <h2>Aula - 15</h2> -->
+    <p>Assim como na aula14, tbm temos os eventos multiplos, isso que dizer, que em um determinado momento ou em um botão, podemos invocar mais de um evento no template.</p>
     <p>Acesse o meu github e veja o meu trabalho <a v-bind:href="github" target="_blank">Dinos-s</a></p>
-    <div>
-       <button @click="showEmail">{{ btnText }}</button>
-    </div>
-    <p>Possuo conhecimeto em:</p>
-    <p>Beckend:</p>
-    <ul>
-        <li v-for="(tecnology, index) in Tec_backend" :key="index">
-            {{ tecnology }}
-        </li>
-    </ul>
-    <p>Frontend:</p>
-    <ul>
-        <li v-for="tecnology in Tec_frotend" :key='tecnology.id'>
-            {{ tecnology.lenguage }}
-        </li>
-    </ul>
     <p v-show="showemail">Meu contato: {{ email }}</p>
 </template>
 
@@ -31,12 +15,6 @@
                 email: 'info@.com',
                 showemail: false,
                 btnText: 'Mostrar e-mail',
-                Tec_backend: ['JavaScript', "Python", `MySQL`],
-                Tec_frotend: [
-                    {id: 1, lenguage: 'HTML'},
-                    {id: 2, lenguage: 'CSS'},
-                    {id: 3, lenguage: 'JS'},
-                ],
             }
         },
         methods: {
