@@ -1,6 +1,6 @@
 <template>
-    <!-- <h2>Aula - 13</h2> -->
-    <p>Array pode ser renderizada de duas formas, de simples ou declanrando o que está na lista como objeto. sendo invocado pela diretiva <strong>v-for</strong>.</p>
+    <!-- <h2>Aula - 14</h2> -->
+    <p>São usados para complementar ações dos usários com a ativação dos métodos como vimos no <strong>@click()</strong> podendo receber parametros, para executar o determinado evento.</p>
     <p>Acesse o meu github e veja o meu trabalho <a v-bind:href="github" target="_blank">Dinos-s</a></p>
     <div>
        <button @click="showEmail">{{ btnText }}</button>
