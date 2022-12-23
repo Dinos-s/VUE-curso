@@ -1,8 +1,9 @@
 <template>
-    <h2>Aula - 15</h2>
+    <h2>Aula - 16</h2>
     <h2>Aula de {{ aula }}</h2>
     <Info/>
-    <EventsMult/>
+    <p>Componente Aula:</p>
+    <Reutilizar/>
 </template>
 
 <style>
@@ -13,16 +14,16 @@
 
 <script>
     import Info from "./Info.vue";
-    import EventsMult from './EventsMult.vue';
+    import Reutilizar from './Reutilizar.vue';
     export default{
         name: 'aula',
         components:{
             Info,
-            EventsMult,
+            Reutilizar,
         },
         data(){
             return {
-                aula: 'Eventos Multiplos'
+                aula: 'Reutilizar Componentes'
             }
         }
     }

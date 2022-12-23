@@ -1,12 +1,15 @@
 <template>
-    <!-- <h2>Aula - 15</h2> -->
-    <p>Assim como na aula14, tbm temos os eventos multiplos, isso que dizer, que em um determinado momento ou em um botão, podemos invocar mais de um evento no template.</p>
+    <!-- <h2>Aula - 16</h2> -->
+    <p>Assim com já foi dito, componetes podem ser reutilizados, em outras partes no código, sem a menor interferência, entre elas.</p>
     <p>Acesse o meu github e veja o meu trabalho <a v-bind:href="github" target="_blank">Dinos-s</a></p>
     <p v-show="showemail">Meu contato: {{ email }}</p>
+
+    <p>Componente Info:</p>
+    <Reutilizar/>
 </template>
 
 <script>
-
+    import Reutilizar from "./Reutilizar.vue";
     export default {
         name: 'Info',
         data(){
@@ -16,6 +19,9 @@
                 showemail: false,
                 btnText: 'Mostrar e-mail',
             }
+        },
+        components: {
+            Reutilizar,
         },
         methods: {
             showEmail(){
