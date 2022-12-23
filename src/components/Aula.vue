@@ -1,9 +1,8 @@
 <template>
-    <h2>Aula - 16</h2>
+    <Header :logado="true"/>
+    <h2>Aula - 17</h2>
     <h2>Aula de {{ aula }}</h2>
-    <Info/>
-    <p>Componente Aula:</p>
-    <Reutilizar/>
+    <Info :email="email"/>
 </template>
 
 <style>
@@ -14,16 +13,17 @@
 
 <script>
     import Info from "./Info.vue";
-    import Reutilizar from './Reutilizar.vue';
+    import Header from "./Header.vue";
     export default{
         name: 'aula',
         components:{
             Info,
-            Reutilizar,
+            Header,
         },
         data(){
             return {
-                aula: 'Reutilizar Componentes'
+                aula: 'Props',
+                email: "LTP7@gmail.com"
             }
         }
     }
