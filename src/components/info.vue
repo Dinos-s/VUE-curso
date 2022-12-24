@@ -1,18 +1,22 @@
 <template>
-    <!-- <h2>Aula - 17</h2> -->
-    <p>Podendo receber dados, vindas pelo data() ou de modo mais direto, e assim como nos metódos, é nescessário criar um seção props.</p>
-    <p>tbm podemos utilizar os props como arrays, e passar podemos passar mais de uma proprie dade por vez.</p>
+    <!-- <h2>Aula - 18</h2> -->
+    <p>Usando o <strong>$emit</strong> podemos emtir um evento no componente pai. Esse evento pode ser ivocado por um método no componente pai. Nã se esqueça de informar o que o componete deve fazer.</p>
     <p>Acesse o meu github e veja o meu trabalho <a v-bind:href="github" target="_blank">Dinos-s</a></p>
     <div>
         <button @click="showEmail">{{ btnText }}</button>
     </div>
     <p v-show="showemail">Meu contato: {{ email }}</p>
     <p>{{ email }}</p>
+    <Picture/>
 </template>
 
 <script>
+    import Picture from "./Picture.vue";
     export default {
         name: 'Info',
+        components:{
+            Picture,
+        },
         props:{
             email: String
         },

@@ -1,6 +1,6 @@
 <template>
     <Header :logado="true"/>
-    <h2>Aula - 17</h2>
+    <h2>Aula - 18</h2>
     <h2>Aula de {{ aula }}</h2>
     <Info :email="email"/>
 </template>
@@ -13,16 +13,14 @@
 
 <script>
     import Info from "./Info.vue";
-    import Header from "./Header.vue";
     export default{
         name: 'aula',
         components:{
             Info,
-            Header,
         },
         data(){
             return {
-                aula: 'Props',
+                aula: '$emit',
                 email: "LTP7@gmail.com"
             }
         }

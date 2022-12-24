@@ -1,13 +1,13 @@
 <template>
-  <Pessoa/>
+  <Aula/>
 </template>
 
 <script>
-import Pessoa from "./components/Aula.vue";
+import Aula from "./components/Aula.vue";
   export default {
     name: 'App',
     components:{
-      Pessoa,
+      Aula,
     },
   }
 </script>
