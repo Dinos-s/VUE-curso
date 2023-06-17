@@ -1,14 +1,14 @@
 <template>
   <h1>Iniciando no Vue.JS</h1>
-  <firstComponent/>
+  <Aula/>
 </template>
 
 <script>
-import firstComponent from "./components/firstComponent.vue";
+import Aula from "./components/Aula.vue";
   export default {
-    name: 'App',
-    components:{
-      firstComponent
+    name: "App",
+    components: { 
+      Aula
     }
-  }
+}
 </script>
