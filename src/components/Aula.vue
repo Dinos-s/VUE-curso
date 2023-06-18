@@ -1,5 +1,5 @@
 <template>
-  <h2>Aula - 19</h2>
+  <h2>Aula - 20</h2>
   <p>Aula de {{ aula }}</p>
   <Info/>
 </template>
@@ -10,7 +10,7 @@ export default {
   name: 'Aula',
   data(){
     return {
-      aula: "estilização dinamica"
+      aula: "Propriedade Computada"
     }
   },
   components: {
