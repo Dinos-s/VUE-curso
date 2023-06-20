@@ -1,23 +1,23 @@
 <template>
-    <!-- <h2>Aula - 22</h2> -->
+    <!-- <h2>Aula - 23</h2> -->
     <div>
-        <slot></slot>
-        <slot name='title'></slot>
-        <p>A tag <strong>slot</strong> pode ser usada para deixar o seu codigo mais fluido e flexivel;</p>
-        <p>Ela pode se declarada em um dos componentes, para isso ela é dividida de duas formas declarativas;</p>
-        <li>Modo padrão: <strong>slot</strong></li>
-        <li>Modo especifico: <strong>slot name=""</strong></li>
-        <h2>
-            <slot name="person"></slot>
-        </h2>
-    </div> 
+        <p>o vue router, por padrão não vem no projeto inicializado no vue cli(caso ñ tenha escolhido o pluguin), para
+            instalar esse pluguis use o npm i vue-router</p>
+
+        <p>ou use o vue add router e marque não na pergunta, já que ele sobreescreve alguns arquivos no projeto que é
+            instalado;</p>
+
+        <p>Caso vc tenha inicializado o router com npm, vc deve criar uma pasta para rotas em js, e uma pasta para o
+            arquivos de views com vue, e no main.js import o router;</p>
+
+        <p>na pasta router, no index.js, algumas estruturas basicas, percerba que a constante rotas retorna um array de objetos e no objeto about, temos uma info extra:</p>
+        <li>component: () => import('../views/about.vue')</li>
+        <p>a parti desse ponto é nescessário entender que essa rota só será carregada caso seja executada;</p>
+    </div>
 </template>
 
 <script>
 export default {
     name: "Info",
-    mounted(){
-        console.log(this.$slots);
-    }
 }
 </script>
